@@ -59,8 +59,7 @@ python main.py -i test.mp3
 The sample main code only requires one parameter in worker.py:
 - **id_worker** worker id of created worker
 
-If all runned at the same computer, its not necessary to change anything, but in case of trying connection in different computers, urls on cliente.py should be changed.
-Example: url = 'http://{ip_of_server_machine}:8080/'
+The script run in the same computer but if you run in different computers you should be able to run the script  and establish communication between them.
 
 ```bash
 $ source venv/bin/activate
