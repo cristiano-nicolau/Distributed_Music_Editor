@@ -1,0 +1,453 @@
+
+
+/* Navbar */
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #121212;
+}
+
+
+navbar{
+    background-color: #1B2223;
+    height: 9%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarh1{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+/* Main */
+
+
+#optionssel{
+    height: 10rem;
+    width: 100%;
+}
+
+.ag-format-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ag-courses_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  .ag-courses_item {
+    border: 0.1rem;
+    border-color: white;
+    border-style: solid;
+    -ms-flex-preferred-size: calc(24% - 30px);
+    flex-basis: calc(24% - 30px);
+  
+    margin: 0 1rem 1rem;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;    
+    justify-content: center;
+    align-items: center;
+  }
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  .ag-courses-item_link:hover,
+  .ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+  }
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+    cursor: pointer;
+  }
+  .ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    margin-top: 1rem;
+  
+    overflow: hidden;
+  
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date-box {
+    font-size: 18px;
+    color: #FFF;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+  
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+  }
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 50%;
+  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+    background-color: #3ecd5e;
+  }
+  .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+    background-color: #e44002;
+  }
+  .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+    background-color: #952aff;
+  }
+  .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+    background-color: #cd3e94;
+  }
+  .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+    background-color: #4c49ea;
+  }
+  
+  
+  
+  @media only screen and (max-width: 979px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+    }
+    .ag-courses-item_title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  
+  }
+  @media only screen and (max-width: 639px) {
+    .ag-courses_item {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+    .ag-courses-item_title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 24px;
+    }
+    .ag-courses-item_link {
+      padding: 22px 40px;
+    }
+    .ag-courses-item_date-box {
+      font-size: 16px;
+    }
+  }
+  
+
+  /* input */
+
+  #file-drop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 8%;
+    width: 50%;
+    max-width: 100%;
+    padding: 25px;
+  }
+  
+  #smusica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+    height: 3rem;
+    width: 10%;
+    margin-left: 27.5%;
+    font-size: 1.2rem;
+  }
+  
+  .file-drop-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adjust this value as needed */
+    margin-top: 10%;
+    margin-bottom: 2%;
+    width: 60%;
+    max-width: 100%;
+    padding: 25px;
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+    transition: 0.2s;
+  }
+  
+  .file-drop-area.is-active {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+.fake-btn {
+  flex-shrink: 0;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+
+.file-msg {
+  font-size: 1.2;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+/*musica detalhes*/
+
+#music-details-container{
+    border:1rem;
+    border-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-top:15%;
+    width: 20%;
+    height: 10rem;
+    max-width: 100%;
+}
+
+#music-details{
+    display: flex;
+    align-items: center;
+}
+
+#music-id-input{
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+}
+
+#submit-btn2{
+    height: 4rem;
+    width: 9rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+#response-container {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color:white;
+}
+
+
+
+
+/* lista musicas*/
+
+#list-music{
+    width: 100%;
+    color:white;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+#table{
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 3rem;
+}
+
+th{
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+td{
+    border: 1px solid white;
+    padding: 1rem;
+    height: 1rem;
+}
+
+
+/*process music*/
+
+#process-music{
+    width: 100%;
+    color:white;
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music-id-div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#process-music-tracks-div{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#process-music-id-t{
+    font-size: 1.5rem;
+}
+
+#process-music-id-input{
+    margin-left: 1rem;
+    height: 2rem;
+}
+
+#tracks_id-t{
+    font-size: 1.5rem;
+}
+
+#process-track-id1{
+    margin-left: 1rem;
+    height: 2rem;
+}
+#process-track-id2{
+    margin-left: 1rem;
+    height: 2rem;
+}
+#process-track-id3{
+    margin-left: 1rem;
+    height: 2rem;
+}
+#process-track-id4{
+    margin-left: 1rem;
+    height: 2rem;
+}
+
+
+#process-btn{
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  width: 10%;
+  margin-left: 47.5%;
+  justify-content: center;
+  margin-top:2rem;
+  font-size: 1.2rem;
+}
+
+#progress-container {
+  margin-top: 2rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color:white;
+  align-items: center;
+  margin-left: 30%;
+}
+
+
+
+/* Footer */
+
+
+#footer{
+    background-color: #1B2223;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+}

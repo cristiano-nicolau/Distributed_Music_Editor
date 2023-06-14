@@ -1,0 +1,119 @@
+<!--index.html-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Distributed Music Editor</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <navbar class="navbar">
+        <div id="navbarh1"> 
+            <H1>Projeto Final CD</H1>
+        </div>
+    </navbar>
+    <div id="optionssel" style="margin-top:8rem; height: 10rem; width: 100%;">
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+                <div class="ag-courses_item" id="item1">
+                    <div class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg">
+                        </div>
+                        <div class="ag-courses-item_title">
+                            Submeter música
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-courses_item" id="item2">
+                    <div class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg">
+                        </div>
+                        <div class="ag-courses-item_title">
+                            Obter detalhes de uma música
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-courses_item" id="item3">
+                    <div class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">
+                            Listar músicas submetidas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ag-courses_item" id="item4">
+                    <div class="ag-courses-item_link">
+                        <div class="ag-courses-item_bg"></div>
+                        <div class="ag-courses-item_title">
+                            Processar uma música
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="file-drop">
+        <form class="file-drop-area" action="/music" method="POST" enctype="multipart/form-data">
+            <span class="fake-btn">Escolha o ficheiro</span>
+            <span class="file-msg">
+                <p style="color:white">ou arraste para aqui</p>
+            </span>
+            <input class="file-input" accept=".mp3" name="file" type="file" multiple>
+        </form>
+        <button class="submit-btn" id="smusica" type="button">Submeter</button>
+    </div>
+    
+
+    <div id="music-details-container" style="display: none;">
+        <div id="music-details">
+            <input type="number" id="music-id-input" placeholder="Enter music ID">
+            <button id="submit-btn2">Submit</button>
+        </div>
+        <div id="response-container"></div>
+
+    </div>
+
+    <div id="list-music">
+        <h1 style=" justify-content:center;display:flex">Lista Músicas</h1>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Music ID</th>
+                    <th>Titulo</th>
+                    <th>Banda</th>
+                    <th>Tracks</th>
+                </tr>
+            </thead>
+            <tbody id="music-table-body">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="process-music">
+        <div id="music-id-div">
+            <p id="process-music-id-t">Music ID</p>
+            <input type="number" id="process-music-id-input" placeholder="Enter music ID">
+        </div>
+        <div id="process-music-tracks-div">
+            <p id="tracks_id-t">Tracks IDs</p>
+            <input type="number" id="process-track-id1" placeholder="Enter Track ID">
+            <input type="number" id="process-track-id2" placeholder="Enter Track ID">
+            <input type="number" id="process-track-id3" placeholder="Enter Track ID">
+            <input type="number" id="process-track-id4" placeholder="Enter Track ID">
+        </div>
+        <button id="process-btn">Process Music</button>
+    </div>
+    <div id="progress-container"></div>
+    <footer class="footer" id="footer">
+        <p id="footer-text">Feito por: 107323-Vasco Miguel Fernandes Faria / 108536-Cristiano Antunes Nicolau</p>
+    </footer>
+</body>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</html>
