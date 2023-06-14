@@ -61,6 +61,7 @@ The sample main code only requires one parameter in worker.py:
 
 The script run in the same computer but if you run in different computers you should be able to run the script  and establish communication between them.
 
+In first terminal set server
 ```bash
 $ source venv/bin/activate
 $ python server.py
