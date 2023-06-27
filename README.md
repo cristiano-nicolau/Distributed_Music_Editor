@@ -1,4 +1,4 @@
-# CD 2023 Project
+# Distributed Music Editor
 
 Here we have a sample code that loads one mp3 file and splits it 
 into 4 tracks: vocals, drums, bass and other.
